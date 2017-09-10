@@ -1,0 +1,9 @@
+extends ../template
+
+block variables
+  - var title = 'Обо мне'
+
+block content
+  include ../common/me.pug
+  h2 Чем я могу быть вам полезен
+  include ../common/technologies.pug
