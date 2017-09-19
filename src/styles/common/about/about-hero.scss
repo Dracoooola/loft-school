@@ -1,0 +1,120 @@
+@import 'user-image';
+// .portfolio {
+//     position: absolute;
+//     width: 80%;
+//     height: 80%;
+//     top: 50%;
+//     left: 50%;
+//     z-index: 0;
+//     margin-left: -40%;
+//     margin-top: -25%;
+//     fill: rgba(255, 255, 255, .2)
+// }
+.hero {
+    position: relative;
+    background: url(../images/fone.jpg) center center no-repeat;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-flow: wrap;
+    align-content: space-between;
+    height: 100vh;
+}
+
+.hero-top-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.hamburger-menu {
+    fill: white;
+    height: 1.75rem;
+    width: 1.75rem;
+}
+
+.socials {
+    display: flex;
+}
+
+.socials__item {
+    height: 1.25rem;
+    width: 1.25rem;
+    margin-left: 1rem;
+}
+
+.socials__icon {
+    height: 1.25rem;
+    width: 1.25rem;
+    fill: rgba(255, 255, 255, .5);
+    transition: .3s;
+}
+
+.socials__icon-git {
+    width: 1rem;
+    height: 1rem;
+}
+
+.socials__icon-in {
+    width: 1.2rem;
+    height: 1.1rem;
+}
+
+.socials__icon-vk {
+    height: 1.25rem;
+    width: 1.5rem
+}
+
+.socials__icon:hover {
+    fill: #FFF;
+}
+
+.hero__author {
+    width: 100%;
+    z-index: 200;
+    height: 60%;
+}
+
+.user__name {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    z-index: 200;
+}
+
+.user__info {
+    font-size: 0.8rem;
+    font-weight: 300;
+    z-index: 200;
+}
+
+.hero__user {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 200;
+    width: 100%;
+    background: url(../images/portfolio_header.svg) center top no-repeat;
+    background-size: 90%;
+    height: 100%;
+}
+
+.hero__scroll-btn {
+    width: 100%;
+    text-align: center;
+    z-index: 200;
+}
+
+.arrow-down {
+    width: 1.3rem;
+    height: .8rem;
+    fill: rgba(255, 255, 255, .5);
+    transition: .3s;
+    z-index: 200;
+}
+
+.arrow-down:hover .arrow-down {
+    fill: white;
+}

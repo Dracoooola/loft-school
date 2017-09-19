@@ -1,0 +1,18 @@
+.my-work {
+    background-color: $white-fone;
+    padding-bottom: 1rem;
+}
+
+.work-triangle {
+    fill: $white-fone;
+}
+
+.my-work__h-container {
+    height: 9rem;
+    width: 25rem;
+    margin: 0 auto;
+    background: url(../images/works_header.svg) center center no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

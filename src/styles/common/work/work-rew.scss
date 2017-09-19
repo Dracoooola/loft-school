@@ -1,0 +1,118 @@
+.reviews {
+    background: url(../images/bg.jpg) center center no-repeat;
+    position: relative;
+}
+
+.container-reviews {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.review__text {
+    width: 25rem;
+    height: 10rem;
+    background: url(../images/about-header.svg) center center no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reviews__list {
+    display: flex;
+    width: 41rem;
+}
+
+.reviews__item {
+    width: 50%;
+    display: flex;
+    flex-flow: wrap;
+    height: 100%;
+    align-content: space-between;
+    padding: 0 1rem;
+}
+
+.reviews__img {
+    color: rgba(55, 62, 66, .5);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.reviews__txt {
+    font-size: 0.8rem;
+    color: #455a64;
+}
+
+.reviews__avatar {
+    border-radius: 50%;
+}
+
+.reviews-comment__profile {
+    display: flex;
+    align-items: center;
+    flex-flow: wrap;
+    margin-top: 1rem;
+}
+
+.comment__profile-named {
+    margin-left: 1rem;
+    color: $green;
+    font-size: 0.8rem;
+}
+
+.reviews__name {
+    font-weight: 600;
+}
+
+.reviews__rang {
+    margin-top: 0.25rem;
+    font-weight: 400;
+}
+
+.reviews__illusion {
+    margin-top: 3rem;
+    margin-bottom: 15rem;
+    width: 100%;
+    height: 22rem;
+    position: relative;
+}
+
+.reviews__blur {
+    position: absolute;
+    width: 19rem;
+    height: 22rem;
+    //background: url(../images/bg.jpg) center center no-repeat;
+}
+
+.reviews__center {
+    position: absolute;
+    width: 19rem;
+    height: 22rem;
+    left: 50%;
+    margin-left: -9.5rem;
+    background-color: #FAFAFA;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+}
+
+.work-text {
+    font-size: 1.75rem;
+    color: $gray;
+}
+
+.work__input {
+    margin-bottom: 1rem;
+    border-radius: .25rem;
+    border: none;
+    outline: none;
+    width: 90%;
+    height: 2.25rem;
+    font-size: 0.8rem;
+    padding: 0 0.5rem;
+}
+
+.work__text-area {
+    height: 7rem;
+}

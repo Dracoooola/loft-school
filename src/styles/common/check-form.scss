@@ -1,0 +1,105 @@
+.robot-check-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    color: $gray;
+    margin-bottom: 1rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.robot-check__text {
+    margin-left: 1rem;
+}
+
+.two-text-check-block {
+    text-align: center;
+    font-size: .8rem;
+    font-weight: 600;
+    color: $gray;
+    margin-bottom: .5rem;
+}
+
+.third-text-check-block {
+    display: flex;
+    width: 100%;
+}
+
+.radio-check-block {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 0.8rem;
+    color: $gray;
+    width: 48%;
+    padding-right: 2rem;
+    box-sizing: border-box;
+}
+
+.first-radio-check__right {
+    justify-content: flex-start;
+}
+
+.first-robot-check {
+    display: none;
+    top: 0;
+}
+
+.robot-check__fake {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: #fff;
+    position: relative;
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        border-radius: 50%;
+        background: $green;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: width .3s, height .3s;
+    }
+}
+
+.hero__radio-elem:checked {
+    &+.robot-check__fake {
+        &:after {
+            width: .4rem;
+            height: .4rem;
+        }
+    }
+}
+
+.robot-check-block {
+    .robot-check__fake {
+        border-radius: 10%;
+    }
+    .hero__radio-elem {
+        &+.robot-check__fake {
+            &:after {
+                background: transparent;
+            }
+        }
+    }
+    .hero__radio-elem:checked {
+        &+.robot-check__fake {
+            &:after {
+                background: url("../images/galk.png") 50% no-repeat transparent;
+                background-color: $green;
+                width: 100%;
+                height: 100%;
+                border-radius: 10%;
+            }
+        }
+    }
+}
+
+.hero__radio-elem:checked+.robot-check__fake+.radio-text {
+    color: $green;
+}

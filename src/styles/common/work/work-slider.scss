@@ -1,0 +1,76 @@
+.work {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    text-align: center;
+}
+
+.work__left {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0efe9;
+}
+
+.work__h {
+    font-size: 1.8rem;
+}
+
+.work__left-center {
+    width: 50%;
+    height: 50%;
+}
+
+.work-band {
+    border-top: solid 1px $green;
+    border-bottom: solid 1px $green;
+    padding: 1rem 0;
+    margin: 2rem 0;
+}
+
+.work__left-web {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: $green;
+}
+
+.work__button {
+    width: 10rem;
+    height: 2.25rem;
+    background: $green;
+    color: #ffffff;
+    border: 0;
+    font-size: 0.8rem;
+    border-radius: 0.1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.work__button-container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 0 0.5rem;
+    align-items: center;
+}
+
+.link_button {
+    height: 1rem;
+    width: 1rem;
+    margin-right: .25rem;
+    fill: white;
+}
+
+.work__right {
+    display: flex;
+    width: 50%;
+    position: relative;
+}

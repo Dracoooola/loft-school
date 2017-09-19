@@ -3,29 +3,149 @@
   <head>
     <meta charset="utf-8">
     <title>Блог</title>
+    <meta content="" name="author">
     <meta content="" name="description">
     <meta content="" name="keywords">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta content="ie=edge" http-equiv="x-ua-compatible"><link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="/assets/styles/app.min.css">
     <script src="/assets/scripts/bundle.js" defer></script>
   </head>
   <body>
-    <h1>Блог</h1>
-    <ul>
-      <li>
-        <h2>Заголовок статьи</h2>
-        <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.</p>
-      </li>
-      <li>
-        <h2>Ещё статья</h2>
-        <p>Далеко-далеко за словесными горами в стране.</p>
-      </li>
-      <li>
-        <h2>Последняя статья</h2>
-        <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Курсивных то осталось за.</p>
-      </li>
-    </ul>
+    <section class="section hero">
+      <div class="hero-top-menu">
+        <div class="hero__socials">
+          <ul class="socials">
+            <li class="socials__item"> <a class="socials__link" href="">
+                <svg class="socials__icon socials__icon-vk">
+                  <use xlink:href="assets/images/sprite/sprite.svg#vk"></use>
+                </svg></a></li>
+            <li class="socials__item"> <a class="socials__link" href="">
+                <svg class="socials__icon">
+                  <use xlink:href="assets/images/sprite/sprite.svg#git"></use>
+                </svg></a></li>
+            <li class="socials__item"> <a class="socials__link" href="">
+                <svg class="socials__icon socials__icon-in">
+                  <use xlink:href="assets/images/sprite/sprite.svg#in"></use>
+                </svg></a></li>
+          </ul>
+        </div>
+        <div class="hero__menu">
+          <div class="hamburger">
+            <svg class="hamburger-menu">
+              <use xlink:href="assets/images/sprite/sprite.svg#menu"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="hero__author">
+        <div class="user hero__user">
+          <div class="user__pic">
+            <!--img.user__pic-img(src="assets/images/a.jpg", alt="i dont understand")-->
+          </div>
+          <div class="user__description">
+            <div class="user__name">Владислав Климов</div>
+            <div class="user__info">Личный сайт разработчика</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__scroll-btn"><a class="arrow-down" href="">
+          <svg class="arrow-down">
+            <use xlink:href="assets/images/sprite/sprite.svg#arrow"></use>
+          </svg></a></div>
+    </section>
+    <section class="triangle-blog">
+      <div class="triangle-container">
+        <div class="about__triangle">
+          <svg class="triangle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none">
+            <polygon class="blog-poligon" points="0,0   0,200   1000,200   1000,75.5"></polygon>
+          </svg>
+        </div>
+        <div class="about__triangle">
+          <svg class="triangle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none">
+            <polygon class="blog-poligon" points="1000, 0   1000, 200   0, 200   0, 75.5"></polygon>
+          </svg>
+        </div>
+      </div>
+    </section>
+    <section class="blog-section">
+      <div class="blog-section__left-clm">
+        <ul class="blog-named__list">
+          <li class="blog-named__item blog-name__active">
+            <div class="blog-name">Самое важное в SASS</div>
+          </li>
+          <li class="blog-named__item">
+            <div class="blog-name">Самое важное в SCSS</div>
+          </li>
+          <li class="blog-named__item">
+            <div class="blog-name">Самое важное в HTML</div>
+          </li>
+          <li class="blog-named__item">
+            <div class="blog-name">Самое важное в PUG</div>
+          </li>
+        </ul>
+      </div>
+      <div class="blog-section__right-clm">
+        <ul class="blog-content__list">
+          <li class="blog-content__item blog-content__active">
+            <h2 class="blog-content__name">Самое важное в SASS</h2>
+            <div class="blog-content__date">21.09.2017</div>
+            <p class="blog-content__text">Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия. Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.</p>
+            <div class="blog-content__border-block"></div>
+          </li>
+          <li class="blog-content__item blog-content__active">
+            <h2 class="blog-content__name">Самое важное в SCSS</h2>
+            <div class="blog-content__date">21.09.2017</div>
+            <p class="blog-content__text">Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия. Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.</p>
+            <div class="blog-content__border-block"></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__row">
+        <div class="footer__col footer__col_left">
+          <div class="footer__menu">
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__items"><a class="menu__link" href="">Мои работы</a></li>
+                <li class="menu__items"><a class="menu__link" href="">Обо мне</a></li>
+                <li class="menu__items"><a class="menu__link" href="">Блог</a></li>
+                <li class="menu__items"><a class="menu__link" href="">Авторизация</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="footer__col footer__col_right">
+          <ul class="socials footer__socilas">
+            <li class="socials__item footer__socilas-item"> <a class="socials__link" href="">
+                <svg class="socials__icon socials__icon-vk socials__round">
+                  <use xlink:href="assets/images/sprite/sprite.svg#vk-round"></use>
+                </svg></a></li>
+            <li class="socials__item footer__socilas-item"> <a class="socials__link" href="">
+                <svg class="socials__icon socials__icon-vk socials__round">
+                  <use xlink:href="assets/images/sprite/sprite.svg#github-round"></use>
+                </svg></a></li>
+            <li class="socials__item footer__socilas-item"> <a class="socials__link" href="">
+                <svg class="socials__icon socials__icon-vk socials__round">
+                  <use xlink:href="assets/images/sprite/sprite.svg#in-round"></use>
+                </svg></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__row">
+        <div class="footer__col footer__col_left">
+          <div class="footer__text text-content">
+            <p class="footer__text">Я веб-разработчик из Воронежа, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. </p>
+          </div>
+        </div>
+        <div class="footer__col footer__col_right">
+          <div class="footer__copyright">
+            <p class="footer__text">© Климов Владислав | создано с любовью в LoftSchool | 2016</p>
+          </div>
+        </div>
+      </div>
+    </footer>
     <h2>Меню</h2>
     <ul class="menu">
       <li><a href="/index.html">Главная</a></li>

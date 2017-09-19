@@ -3,26 +3,275 @@
   <head>
     <meta charset="utf-8">
     <title>Обо мне</title>
+    <meta content="" name="author">
     <meta content="" name="description">
     <meta content="" name="keywords">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta content="ie=edge" http-equiv="x-ua-compatible"><link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="/assets/styles/app.min.css">
     <script src="/assets/scripts/bundle.js" defer></script>
   </head>
   <body>
-    <h1>Обо мне</h1><img class="avatar" src="#" alt="">
-    <h2>Кто я</h2>
-    <p>Я веб разработчик из Воронежа. Мне 20 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты. Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!</p>
-    <h2>Чем я могу быть вам полезен</h2>
-    <p>Я умею
-      <ul class="technologies">
-        <li> <img src="assets/images/sass.svg"></li>
-        <li> <img src="assets/images/pug.svg"></li>
-        <li> <img src="assets/images/gulp.svg"></li>
-        <li> <img src="assets/images/webpack.svg"></li>
-      </ul>
-    </p>
+    <section class="section hero">
+      <div class="hero-top-menu">
+        <div class="hero__socials">
+          <ul class="socials">
+            <li class="socials__item"> <a class="socials__link" href="">
+                <svg class="socials__icon socials__icon-vk">
+                  <use xlink:href="assets/images/sprite/sprite.svg#vk"></use>
+                </svg></a></li>
+            <li class="socials__item"> <a class="socials__link" href="">
+                <svg class="socials__icon">
+                  <use xlink:href="assets/images/sprite/sprite.svg#git"></use>
+                </svg></a></li>
+            <li class="socials__item"> <a class="socials__link" href="">
+                <svg class="socials__icon socials__icon-in">
+                  <use xlink:href="assets/images/sprite/sprite.svg#in"></use>
+                </svg></a></li>
+          </ul>
+        </div>
+        <div class="hero__menu">
+          <div class="hamburger">
+            <svg class="hamburger-menu">
+              <use xlink:href="assets/images/sprite/sprite.svg#menu"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="hero__author">
+        <div class="user hero__user">
+          <div class="user__pic">
+            <!--img.user__pic-img(src="assets/images/a.jpg", alt="i dont understand")-->
+          </div>
+          <div class="user__description">
+            <div class="user__name">Владислав Климов</div>
+            <div class="user__info">Личный сайт разработчика</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__scroll-btn"><a class="arrow-down" href="">
+          <svg class="arrow-down">
+            <use xlink:href="assets/images/sprite/sprite.svg#arrow"></use>
+          </svg></a></div>
+    </section>
+    <section class="section about">
+      <div class="triangle-container">
+        <div class="about__triangle">
+          <svg class="triangle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none">
+            <polygon class="left" points="0,0   0,200   1000,200   1000,75.5"></polygon>
+          </svg>
+        </div>
+        <div class="about__triangle">
+          <svg class="triangle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none">
+            <polygon class="right" points="1000, 0   1000, 200   0, 200   0, 75.5"></polygon>
+          </svg>
+        </div>
+      </div>
+      <div class="about-container">
+        <div class="about__left-cln">
+          <div class="about__left-cln__left">
+            <div class="about__left-title">
+              <h1 class="block-title">Обо мне</h1>
+            </div>
+          </div>
+          <div class="about__left-cln__right">
+            <div class="about__left-content">
+              <div class="user-description">
+                <div class="user-description__image"></div>
+                <div class="user-description__title">
+                  <h2 class="block-subtitle">Кто я</h2>
+                </div>
+                <div class="user-description__text"> 
+                  <p class="user-description__text__item">Я веб разработчик из Воронежа. Мне 20 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.</p>
+                  <p class="user-description__text__item">Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about__right-cln">
+          <div class="about__right-title">
+            <h2 class="block-subtitle">Чем я могу быть вам полезен</h2>
+          </div>
+          <div class="about__right-description">
+            <p class="user-description__text__item">Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачина Backend. Но давайте по порядку.</p>
+          </div>
+          <div class="about__right-content">
+            <ul class="skills-list">
+              <li class="skills-list__item">
+                <div class="skills-row">
+                  <h3 class="skills-row__title">Frontend</h3>
+                  <ul class="skills-row__list">
+                    <li class="skills-row__item">
+                      <svg class="circles" viewBox="0 0 110 110">
+                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                        <circle class="circle__second circle-15" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"> </circle>
+                      </svg>
+                    </li>
+                    <li class="skills-row__item">
+                      <svg class="circles" viewBox="0 0 110 110">
+                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                        <circle class="circle__second circle-55" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"> </circle>
+                      </svg>
+                    </li>
+                    <li class="skills-row__item">
+                      <svg class="circles" viewBox="0 0 110 110">
+                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                        <circle class="circle__second circle-95" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"> </circle>
+                      </svg>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="skills-list__item">
+                <div class="skills-row">
+                  <h3 class="skills-row__title">Backend</h3>
+                  <ul class="skills-row__list">
+                    <li class="skills-row__item">
+                      <svg class="circles" viewBox="0 0 110 110">
+                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                        <circle class="circle__second circle-15" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"> </circle>
+                      </svg>
+                    </li>
+                    <li class="skills-row__item">
+                      <svg class="circles" viewBox="0 0 110 110">
+                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                        <circle class="circle__second circle-55" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"> </circle>
+                      </svg>
+                    </li>
+                    <li class="skills-row__item">
+                      <svg class="circles" viewBox="0 0 110 110">
+                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                        <circle class="circle__second circle-95" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"> </circle>
+                      </svg>
+                    </li>
+                    <li class="skills-row__item">
+                      <svg class="circles" viewBox="0 0 110 110">
+                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                        <circle class="circle__second circle-95" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"> </circle>
+                      </svg>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="skills-list__item">
+                <div class="skills-row">
+                  <h3 class="skills-row__title">WorkFlow</h3>
+                  <ul class="skills-row__list">
+                    <li class="skills-row__item">
+                      <svg class="circles" viewBox="0 0 110 110">
+                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                        <circle class="circle__second circle-15" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"> </circle>
+                      </svg>
+                    </li>
+                    <li class="skills-row__item">
+                      <svg class="circles" viewBox="0 0 110 110">
+                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                        <circle class="circle__second circle-55" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"> </circle>
+                      </svg>
+                    </li>
+                    <li class="skills-row__item">
+                      <svg class="circles" viewBox="0 0 110 110">
+                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                        <circle class="circle__second circle-95" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"> </circle>
+                      </svg>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section map">
+      <div class="google-map"></div>
+      <div class="map__data">
+        <div class="contacts">
+          <div class="contacts__title">
+            <h2 class="block-subtitle">Контакты</h2>
+          </div>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <div class="contacts-row__item"> 
+                <svg class="contacts-icon"> 
+                  <use xlink:href="assets/images/sprite/sprite.svg#skype"></use>
+                </svg>
+              </div>
+              <div class="contacts-row__content">skype_kdn</div>
+            </li>
+            <li class="contacts__item">
+              <div class="contacts-row__item"> 
+                <svg class="contacts-icon"> 
+                  <use xlink:href="assets/images/sprite/sprite.svg#mail"></use>
+                </svg>
+              </div>
+              <div class="contacts-row__content">klimvd97@mail.ru</div>
+            </li>
+            <li class="contacts__item">
+              <div class="contacts-row__item"> 
+                <svg class="contacts-icon"> 
+                  <use xlink:href="assets/images/sprite/sprite.svg#phone"></use>
+                </svg>
+              </div>
+              <div class="contacts-row__content">+7 (910)-247-72-74</div>
+            </li>
+            <li class="contacts__item">
+              <div class="contacts-row__item"> 
+                <svg class="contacts-icon"> 
+                  <use xlink:href="assets/images/sprite/sprite.svg#map-mark"></use>
+                </svg>
+              </div>
+              <div class="contacts-row__content">Россия г.Воронеж, ул.Ильича 59</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__row">
+        <div class="footer__col footer__col_left">
+          <div class="footer__menu">
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__items"><a class="menu__link" href="">Мои работы</a></li>
+                <li class="menu__items"><a class="menu__link" href="">Обо мне</a></li>
+                <li class="menu__items"><a class="menu__link" href="">Блог</a></li>
+                <li class="menu__items"><a class="menu__link" href="">Авторизация</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="footer__col footer__col_right">
+          <ul class="socials footer__socilas">
+            <li class="socials__item footer__socilas-item"> <a class="socials__link" href="">
+                <svg class="socials__icon socials__icon-vk socials__round">
+                  <use xlink:href="assets/images/sprite/sprite.svg#vk-round"></use>
+                </svg></a></li>
+            <li class="socials__item footer__socilas-item"> <a class="socials__link" href="">
+                <svg class="socials__icon socials__icon-vk socials__round">
+                  <use xlink:href="assets/images/sprite/sprite.svg#github-round"></use>
+                </svg></a></li>
+            <li class="socials__item footer__socilas-item"> <a class="socials__link" href="">
+                <svg class="socials__icon socials__icon-vk socials__round">
+                  <use xlink:href="assets/images/sprite/sprite.svg#in-round"></use>
+                </svg></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__row">
+        <div class="footer__col footer__col_left">
+          <div class="footer__text text-content">
+            <p class="footer__text">Я веб-разработчик из Воронежа, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. </p>
+          </div>
+        </div>
+        <div class="footer__col footer__col_right">
+          <div class="footer__copyright">
+            <p class="footer__text">© Климов Владислав | создано с любовью в LoftSchool | 2016</p>
+          </div>
+        </div>
+      </div>
+    </footer>
     <h2>Меню</h2>
     <ul class="menu">
       <li><a href="/index.html">Главная</a></li>

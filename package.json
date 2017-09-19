@@ -7,7 +7,8 @@
     "author": "",
     "license": "ISC",
     "scripts": {
-        "start": "gulp"
+        "start": "gulp",
+        "svg": "gulp svg"
     },
     "devDependencies": {
         "browser-sync": "^2.18.13",

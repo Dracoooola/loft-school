@@ -1,0 +1,234 @@
+.about {
+    color: $gray;
+}
+
+.about-container {
+    display: flex;
+}
+
+.about__left-cln {
+    width: 50%;
+    position: relative;
+    background-color: #efeee9;
+    display: flex;
+    padding-bottom: 3rem;
+}
+
+.about__right-cln {
+    width: 50%;
+    position: relative;
+    background-color: #eeebdf;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    padding-left: 1rem;
+    padding-bottom: 3rem;
+}
+
+.about__triangle {
+    width: 50%;
+    height: 20rem;
+    position: relative;
+}
+
+.triangle-container {
+    position: relative;
+    display: flex;
+    height: 0;
+    overflow: visible;
+}
+
+.triangle {
+    position: absolute;
+    width: 100%;
+    top: -9rem;
+    height: 9rem;
+}
+
+.triangle .left {
+    fill: #F0EFE9;
+}
+
+.triangle .right {
+    fill: #EFEBE0;
+}
+
+.user-description {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.about__left-cln__left {
+    width: 40%;
+    position: relative;
+}
+
+.about__left-title {
+    background: url(../images/about-header.svg) center center no-repeat;
+    height: 6rem;
+    background-size: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: -3rem;
+    left: 50%;
+    margin-left: -50%;
+}
+
+.about__left-cln__right {
+    width: 60%;
+    padding: 0 1rem;
+}
+
+.user-description__image {
+    background: url(../images/author.jpg) center top no-repeat;
+    width: 100%;
+    height: 20rem;
+    background-size: 100%;
+}
+
+.user-description__text__item {
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.user-description__text__item:first-child {
+    margin: 0;
+}
+
+.block-subtitle {
+    width: 15rem;
+    text-align: center;
+}
+
+.about__right-content {
+    width: 100%;
+}
+
+.skills-list {
+    width: 100%;
+}
+
+.skills-row__title {
+    font-weight: 1.4rem;
+}
+
+.skills-row__list {
+    display: flex;
+}
+
+.skills-row__item {
+    margin-left: 2rem;
+}
+
+.skills-row__item:first-child {
+    margin: 0;
+}
+
+//Дальше мощь скилов
+.circles {
+    fill: none;
+    stroke-width: 15;
+    width: 7rem;
+    height: 7rem;
+}
+
+.circle__first {
+    stroke: #dfdcd5;
+}
+
+.circle__second {
+    stroke: #1bb696;
+    stroke-dasharray: .0010 282.6;
+    transition: all 1s;
+}
+
+.item {
+    border: 1px solid #ccc;
+    width: 7rem;
+    height: 7rem;
+}
+
+.circles:hover .circle-0 {
+    stroke-dasharray: .001 282.6;
+}
+
+.circles:hover .circle-10 {
+    stroke-dasharray: 28.26 282.6;
+}
+
+.circles:hover .circle-15 {
+    stroke-dasharray: 42.39 282.6;
+}
+
+.circles:hover .circle-20 {
+    stroke-dasharray: 56.52 282.6;
+}
+
+.circles:hover .circle-25 {
+    stroke-dasharray: 70.65 282.6;
+}
+
+.circles:hover .circle-30 {
+    stroke-dasharray: 84.78 282.6;
+}
+
+.circles:hover .circle-35 {
+    stroke-dasharray: 98.91 282.6;
+}
+
+.circles:hover .circle-40 {
+    stroke-dasharray: 113.04 282.6;
+}
+
+.circles:hover .circle-45 {
+    stroke-dasharray: 127.17 282.6;
+}
+
+.circles:hover .circle-50 {
+    stroke-dasharray: 141.3 282.6;
+}
+
+.circles:hover .circle-55 {
+    stroke-dasharray: 155.43 282.6;
+}
+
+.circles:hover .circle-60 {
+    stroke-dasharray: 169.56 282.6;
+}
+
+.circles:hover .circle-65 {
+    stroke-dasharray: 183.69 282.6;
+}
+
+.circles:hover .circle-70 {
+    stroke-dasharray: 197.82 282.6;
+}
+
+.circles:hover .circle-75 {
+    stroke-dasharray: 211.95 282.6;
+}
+
+.circles:hover .circle-80 {
+    stroke-dasharray: 226.08 282.6;
+}
+
+.circles:hover .circle-85 {
+    stroke-dasharray: 240.21 282.6;
+}
+
+.circles:hover .circle-90 {
+    stroke-dasharray: 254.34 282.6;
+}
+
+.circles:hover .circle-95 {
+    stroke-dasharray: 268.47 282.6;
+}
+
+.circles:hover .circle-100 {
+    stroke-dasharray: 282.6 282.6;
+}

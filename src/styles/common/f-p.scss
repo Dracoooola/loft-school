@@ -1,0 +1,115 @@
+.container__index {
+    height: 100vh;
+    width: 100%;
+    background: url(../images/index-fone.jpg) center center no-repeat;
+}
+
+.container__f-p {
+    height: 95vh;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container__authorization-form {
+    height: 22rem;
+    position: relative;
+    border-radius: 1%;
+    overflow: hidden;
+}
+
+.authorization {
+    margin: 2rem 0 2rem;
+    font-family: 'Bern';
+    text-transform: uppercase;
+}
+
+.authorization-form {
+    height: 20rem;
+    width: 19rem;
+    //padding: 0 1rem;
+    background-color: rgba(252, 252, 252, .85);
+}
+
+.authorization-form_top {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.authorization-form__input-block {
+    width: 90%;
+}
+
+.authorization-form__input-block-item {
+    display: flex;
+    padding-bottom: 1rem;
+}
+
+.authorization-form__label {
+    display: flex;
+    border-radius: 0.2rem 0 0 0.2rem;
+    background-color: #f0efe9;
+    width: 2.25rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.authorization-icon {
+    height: 1rem;
+    width: 1rem;
+}
+
+.authorization-form__input {
+    width: 100%;
+    border: none;
+    height: 2.25rem;
+    border-radius: 0 0.2rem 0.2rem 0;
+    padding-left: 0.75rem;
+    font-size: 0.8rem;
+    color: rgba(55, 62, 66, .5);
+    outline: none;
+}
+
+.authorization-form__bot {
+    top: 20rem;
+    position: absolute;
+    width: 100%;
+    display: flex;
+}
+
+.authorization-form__but {
+    background-color: rgba(0, 191, 165, .85);
+    border: none;
+    width: 50%;
+    height: 2rem;
+    box-sizing: border-box;
+    font-size: 0.8rem;
+    color: white;
+    font-weight: 500;
+    line-height: 1.9rem;
+    cursor: pointer;
+}
+
+.authorization-form__but:hover {
+    background-color: rgba(0, 150, 136, .85)
+}
+
+.authorization-form__but-left {
+    border-right: solid rgba(222, 227, 231, .5) 1px;
+}
+
+.authorization-form__but-right {
+    border-left: solid rgba(222, 227, 231, .5) 1px;
+}
+
+.author-text {
+    text-align: center;
+    color: white;
+    font-weight: 300;
+    font-size: .8rem;
+}
+
+@import 'common/check-form';

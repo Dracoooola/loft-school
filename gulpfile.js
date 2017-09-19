@@ -45,10 +45,10 @@ function templates() {
 function styles() {
     return gulp.src('./src/styles/app.scss')
         .pipe(sourcemaps.init())
-        .pipe(sass({outputStyle: 'compressed'}))
-        .pipe(sourcemaps.write())        
-        .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest(paths.styles.dest))       
+        .pipe(sass({ outputStyle: 'compressed' }))
+        .pipe(sourcemaps.write())
+        .pipe(rename({ suffix: '.min' }))
+        .pipe(gulp.dest(paths.styles.dest))
 }
 
 // webpack
@@ -66,7 +66,7 @@ function clean() {
 // просто переносим картинки
 function images() {
     return gulp.src(paths.images.src)
-          .pipe(gulp.dest(paths.images.dest));
+        .pipe(gulp.dest(paths.images.dest));
 }
 
 // следим за src и запускаем нужные таски (компиляция и пр.)
@@ -80,7 +80,7 @@ function watch() {
 // следим за build и релоадим браузер
 function server() {
     browserSync.init({
-        server: paths.root   
+        server: paths.root
     });
     browserSync.watch(paths.root + '/**/*.*', browserSync.reload);
 }
@@ -100,3 +100,29 @@ gulp.task('default', gulp.series(
     gulp.parallel(styles, scripts, templates, images),
     gulp.parallel(watch, server)
 ));
+
+gulp.task('sprite:svg', function() {
+    return gulp.src('./src/images/svg-sprites/*.svg')
+        .pipe(svgmin({
+            js2svg: {
+                pretty: true
+            }
+        }))
+        .pipe(cheerio({
+            run: function($) {
+                $('[fill]').removeAttr('fill');
+                $('[stroke]').removeAttr('stroke');
+                $('[style]').removeAttr('style');
+            },
+            parserOptions: { xmlMode: true }
+        }))
+        .pipe(replace('&gt;', '>'))
+        .pipe(svgSprite({
+            mode: {
+                symbol: {
+                    sprite: '../sprite.svg'
+                }
+            }
+        }))
+        .pipe(gulp.dest('./src/images/sprite'));
+});

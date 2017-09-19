@@ -2,8 +2,121 @@ extends ../template
 
 block variables
   - var title = 'Обо мне'
+  - var left = 'left'
 
 block content
-  include ../common/me.pug
-  h2 Чем я могу быть вам полезен
-  include ../common/technologies.pug
+  include ../common/header.pug
+  section.section.about
+    include ../common/triangle.pug
+    .about-container
+      .about__left-cln
+        //- .about__triangle.about-triangle
+        //-   svg(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none" class="triangle")
+        //-         polygon(class = "left" points="0,0   0,86   1000,86   1000,75.5")
+        .about__left-cln__left
+          .about__left-title
+            h1.block-title Обо мне
+        .about__left-cln__right
+          .about__left-content
+            .user-description
+              .user-description__image
+              .user-description__title
+                h2.block-subtitle Кто я
+              .user-description__text 
+                p.user-description__text__item Я веб разработчик из Воронежа. Мне 20 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+                p.user-description__text__item Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
+      .about__right-cln
+        //- .about__triangle.about-triangle
+        //-   svg(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none" class="triangle")
+        //-        polygon(class = "right" points="1000, 0   1000, 86   0, 86   0, 75.5")
+        .about__right-title
+          h2.block-subtitle Чем я могу быть вам полезен
+        .about__right-description
+          p.user-description__text__item Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачина Backend. Но давайте по порядку.
+        .about__right-content
+          ul.skills-list
+            li.skills-list__item
+              .skills-row
+                h3.skills-row__title Frontend
+                ul.skills-row__list
+                  li.skills-row__item
+                    svg(class="circles" viewBox='0 0 110 110')
+                      circle(r="45" cx="50%" cy="50%" fill="none" class="circle__first")
+                      circle(r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)" class="circle__second circle-15") 
+                  li.skills-row__item
+                    svg(class="circles" viewBox='0 0 110 110')
+                      circle(r="45" cx="50%" cy="50%" fill="none" class="circle__first")
+                      circle(r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)" class="circle__second circle-55") 
+                  li.skills-row__item
+                    svg(class="circles" viewBox='0 0 110 110')
+                      circle(r="45" cx="50%" cy="50%" fill="none" class="circle__first")
+                      circle(r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)" class="circle__second circle-95") 
+            li.skills-list__item
+              .skills-row
+                h3.skills-row__title Backend
+                ul.skills-row__list
+                  li.skills-row__item
+                    svg(class="circles" viewBox='0 0 110 110')
+                      circle(r="45" cx="50%" cy="50%" fill="none" class="circle__first")
+                      circle(r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)" class="circle__second circle-15") 
+                  li.skills-row__item
+                    svg(class="circles" viewBox='0 0 110 110')
+                      circle(r="45" cx="50%" cy="50%" fill="none" class="circle__first")
+                      circle(r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)" class="circle__second circle-55") 
+                  li.skills-row__item
+                    svg(class="circles" viewBox='0 0 110 110')
+                      circle(r="45" cx="50%" cy="50%" fill="none" class="circle__first")
+                      circle(r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)" class="circle__second circle-95") 
+                  li.skills-row__item
+                    svg(class="circles" viewBox='0 0 110 110')
+                      circle(r="45" cx="50%" cy="50%" fill="none" class="circle__first")
+                      circle(r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)" class="circle__second circle-95") 
+            li.skills-list__item
+              .skills-row
+                h3.skills-row__title WorkFlow
+                ul.skills-row__list
+                  li.skills-row__item
+                    svg(class="circles" viewBox='0 0 110 110')
+                      circle(r="45" cx="50%" cy="50%" fill="none" class="circle__first")
+                      circle(r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)" class="circle__second circle-15") 
+                  li.skills-row__item
+                    svg(class="circles" viewBox='0 0 110 110')
+                      circle(r="45" cx="50%" cy="50%" fill="none" class="circle__first")
+                      circle(r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)" class="circle__second circle-55") 
+                  li.skills-row__item
+                    svg(class="circles" viewBox='0 0 110 110')
+                      circle(r="45" cx="50%" cy="50%" fill="none" class="circle__first")
+                      circle(r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)" class="circle__second circle-95") 
+  section.section.map
+    .google-map
+    .map__data
+      .contacts
+        .contacts__title
+          h2.block-subtitle Контакты
+        ul.contacts__list
+          li.contacts__item
+            .contacts-row__item 
+              svg(class="contacts-icon") 
+                use(xlink:href="assets/images/sprite/sprite.svg#skype")
+            .contacts-row__content skype_kdn
+          li.contacts__item
+            .contacts-row__item 
+              svg(class="contacts-icon") 
+                use(xlink:href="assets/images/sprite/sprite.svg#mail")
+            .contacts-row__content klimvd97@mail.ru
+          li.contacts__item
+            .contacts-row__item 
+              svg(class="contacts-icon") 
+                  use(xlink:href="assets/images/sprite/sprite.svg#phone")
+            .contacts-row__content +7 (910)-247-72-74
+          li.contacts__item
+            .contacts-row__item 
+              svg(class="contacts-icon") 
+                  use(xlink:href="assets/images/sprite/sprite.svg#map-mark")
+            .contacts-row__content Россия г.Воронеж, ул.Ильича 59
+  include ../common/footer.pug
+
+
+  //- include ../common/me.pug
+  //- h2 Чем я могу быть вам полезен
+  //- include ../common/technologies.pug
