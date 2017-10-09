@@ -1,6 +1,9 @@
 .my-work {
     background-color: $white-fone;
     padding-bottom: 1rem;
+    @include tablets {
+        padding-bottom: 10px;
+    }
 }
 
 .work-triangle {
@@ -12,7 +15,111 @@
     width: 25rem;
     margin: 0 auto;
     background: url(../images/works_header.svg) center center no-repeat;
+    background-size: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    @include tablets {
+        height: 7rem;
+        width: 18rem;
+    }
+    @include phones {
+        width: 300px;
+        height: 5rem;
+    }
+}
+
+.my-work__h {
+    font-size: 3rem;
+    font-family: 'bern-r';
+    color: $gray-name;
+    @include tablets {
+        font-size: 50px;
+    }
+    @include phones {
+        font-size: 35px;
+    }
+}
+
+.my-work__h:before {
+    display: block;
+    height: 5px;
+    width: 20px;
+    background-color: #c5cbcd;
+    content: "";
+    position: absolute;
+    top: 90px;
+    left: 65px;
+    @include tablets {
+        top: 68px;
+        left: 40px;
+    }
+    @include phones {
+        top: 47px;
+        left: 35px;
+    }
+}
+
+.my-work__h:after {
+    display: block;
+    height: 5px;
+    width: 20px;
+    background-color: #c5cbcd;
+    content: "";
+    position: absolute;
+    top: 90px;
+    right: 65px;
+    @include tablets {
+        top: 68px;
+        right: 40px;
+    }
+    @include phones {
+        top: 47px;
+        right: 35px;
+    }
+}
+
+.work-site {
+    font-size: 1.75rem;
+    font-family: 'bern-r';
+    color: $gray-name;
+    text-align: center;
+    @include tablets {
+        margin-top: 0;
+    }
+}
+
+.work-site:before {
+    display: block;
+    height: 5px;
+    width: 20px;
+    background-color: #c5cbcd;
+    content: "";
+    position: absolute;
+    top: 46px;
+    left: 0px;
+    @include tablets {
+        top: 15px;
+    }
+    @include phones {
+        left: 10px;
+    }
+}
+
+.work-site:after {
+    display: block;
+    height: 5px;
+    width: 20px;
+    background-color: #c5cbcd;
+    content: "";
+    position: absolute;
+    top: 46px;
+    right: 0px;
+    @include tablets {
+        top: 15px;
+    }
+    @include phones {
+        right: 10px;
+    }
 }

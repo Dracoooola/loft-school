@@ -4,38 +4,34 @@ block variables
   - var title = 'Добро пожаловать'
 
 block content
-  .container__index
-    .container__f-p
-      .container__authorization-form
-        form.authorization-form
+  .index
+    .authorization-link-container
+      a(href="/authorization.html").authorization-link Авторизация
+    .index-container 
+      .authorization-form-container
+        .authorization-form
           .authorization-form_top
-            h1.authorization Авторизуйтесь
-            .authorization-form__input-block
-              .authorization-form__input-block-item
-                label.authorization-form__label.label-login(for="email")
-                  svg.authorization-icon
-                    use(xlink:href="assets/images/sprite/sprite.svg#login")
-                input.authorization-form__input(name="email" id="email" type="email" placeholder="Логин")
-              .authorization-form__input-block-item
-                label.authorization-form__label.pass(for="password") 
-                  svg.authorization-icon
-                      use(xlink:href="assets/images/sprite/sprite.svg#pass")
-                input.authorization-form__input(name="password" id="password" type="password" placeholder="Пароль")
-              label.robot-check-block
-                input(type="checkbox").first-robot-check.hero__radio-elem
-                .robot-check__fake
-                .robot-check__text Я человек
-              .two-text-check-block Вы точно не робот?
-              .third-text-check-block
-                label.radio-check-block.first-radio-check__left
-                  input(type="radio" name="radio" id="radio2").first-robot-check.hero__radio-elem
-                  .robot-check__fake
-                  .robot-check__text.radio-text Да
-                label.radio-check-block.first-radio-check__right
-                  input(type="radio" name="radio" id="radio2").first-robot-check.hero__radio-elem
-                  .robot-check__fake
-                  .robot-check__text.radio-text Не уверен
+            .authorization-author
+              .user__pic.authorization_avatar
+              h2.name.authorization-name Владислав Климов
+              h3.name.authorization-site Личный сайт разработчика
+            ul.socials.authorization-socials__list
+              li.socials__item.authorization-socials__item
+                a(href="").socials__link
+                  svg.socials__icon.socials__icon-vk.authorization-icons
+                    use(xlink:href="assets/images/sprite/sprite.svg#vk")
+              li.socials__item.authorization-socials__item
+                a(href="").socials__link
+                  svg.socials__icon.authorization-icons
+                    use(xlink:href="assets/images/sprite/sprite.svg#git")
+              li.socials__item.authorization-socials__item
+                a(href="").socials__link
+                  svg.socials__icon.socials__icon-in.authorization-icons
+                    use(xlink:href="assets/images/sprite/sprite.svg#in")
           .authorization-form__bot
-            button.authorization-form__but.authorization-form__but-left На главную
-            button.authorization-form__but.authorization-form__but-right Войти
-    .author-text © Климов Владислав | создано с любовью в LoftSchool | 2017
+            a(href='/my-works.html').button-form.button-form-left.authorization-author__left-but Мои работы
+            a(href='/about.html').button-form.authorization-form__but-mid Обо мне
+            a(href='/blog.html').button-form.button-form-right.authorization-author__right-but  Блог
+    .author-text 
+      .author-context © Климов Владислав
+      .author-context.delimiter-autoriz  создано с любовью в LoftSchool | 2017

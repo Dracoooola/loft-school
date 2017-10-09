@@ -1,7 +1,53 @@
 * {
     box-sizing: border-box;
+    outline: none;
+}
+
+$tablets: 768px;
+$phones: 480px;
+$tabels: 1640px;
+html {
+    font-size: 20px;
 }
 
 .section {
     //height: 100vh;
+}
+
+$gray-name:#455a64;
+$green:#00bfa5;
+@font-face {
+    font-family: 'bern-r';
+    src: url('../fonts/bern-regular.woff2')
+}
+
+.h1 {
+    color: $gray-name;
+    font-family: 'bern-r';
+    text-transform: uppercase;
+    font-size: 1.75rem;
+}
+
+.h1-container {
+    position: relative;
+}
+
+.input-block {
+    width: 90%;
+}
+
+.input-block__item {
+    display: flex;
+    padding-bottom: 1rem;
+}
+
+.input {
+    width: 100%;
+    border: none;
+    height: 2.25rem;
+    border-radius: 0 0.2rem 0.2rem 0;
+    padding-left: 0.75rem;
+    font-size: 0.8rem;
+    color: rgba(55, 62, 66, .5);
+    outline: none;
 }

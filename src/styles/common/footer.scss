@@ -4,16 +4,33 @@
     position: absolute;
     margin-top: -7.5rem;
     width: 100%;
+    @include tablets {
+        height: 230px;
+        margin-top: -230px;
+    }
 }
 
 .footer__row {
     height: 50%;
     display: flex;
+    @include tablets {
+        padding: 10px 0;
+        flex-flow: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+    @include phones {
+        height: 60%;
+    }
 }
 
 .footer__row:first-child {
     border-bottom: 1px solid rgba(100, 106, 109, .85);
     display: flex;
+    @include phones {
+        height: 40%;
+    }
 }
 
 .footer__menu {
@@ -21,21 +38,30 @@
 }
 
 .footer__col {
-    width: 50%;
+    width: 65%;
     display: flex;
     align-items: center;
     padding: 0 1rem;
+    @include tablets {
+        width: 100%;
+    }
 }
 
 .menu__list {
     display: flex;
     width: 100%;
+    @include tablets {
+        justify-content: center;
+    }
 }
 
 .menu__items {
     margin: 0 1rem;
     font-size: 0.8rem;
     color: white;
+    @include tablets {
+        margin: 0 .5rem;
+    }
 }
 
 .menu__items:first-child {
@@ -46,6 +72,9 @@
     text-decoration: none;
     color: white;
     font-weight: 300;
+    @include tablets {
+        font-size: 14px;
+    }
 }
 
 .socials__link {
@@ -58,6 +87,9 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    @include tablets {
+        justify-content: center;
+    }
 }
 
 .footer__socilas-item {
@@ -77,9 +109,17 @@
     color: rgba(255, 255, 255, .5);
     font-weight: 300;
     line-height: 1rem;
+    @include phones {
+        font-size: 14px;
+    }
 }
 
 .footer__col_right {
     display: flex;
     justify-content: flex-end;
+    width: 35%;
+    @include tablets {
+        width: 100%;
+        justify-content: center;
+    }
 }

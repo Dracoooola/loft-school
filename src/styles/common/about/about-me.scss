@@ -4,14 +4,28 @@
 
 .about-container {
     display: flex;
+    @include tablets {
+        flex-flow: column;
+    }
 }
 
 .about__left-cln {
     width: 50%;
     position: relative;
     background-color: #efeee9;
+    padding-bottom: 1rem;
     display: flex;
-    padding-bottom: 3rem;
+    flex-flow: column;
+    align-items: center;
+    @include tablets {
+        width: 100%;
+    }
+    @include tablets {
+        width: 100%;
+    }
+    @include tabels {
+        align-items: flex-end;
+    }
 }
 
 .about__right-cln {
@@ -21,8 +35,10 @@
     display: flex;
     align-items: center;
     flex-flow: column;
-    padding-left: 1rem;
-    padding-bottom: 3rem;
+    padding: 0 2rem 2rem 2rem;
+    @include tablets {
+        width: 100%;
+    }
 }
 
 .about__triangle {
@@ -41,8 +57,12 @@
 .triangle {
     position: absolute;
     width: 100%;
-    top: -9rem;
-    height: 9rem;
+    top: -7rem;
+    height: 7rem;
+    @include phones {
+        top: -4rem;
+        height: 4rem;
+    }
 }
 
 .triangle .left {
@@ -51,6 +71,9 @@
 
 .triangle .right {
     fill: #EFEBE0;
+    @include tablets {
+        fill: #F0EFE9;
+    }
 }
 
 .user-description {
@@ -61,39 +84,117 @@
 }
 
 .about__left-cln__left {
-    width: 40%;
-    position: relative;
+    width: 100%;
+    position: absolute;
+    top: -65px;
+    left: 0;
+    @include tablets {
+        top: -40px;
+    }
+    @include phones {
+        top: -20px;
+    }
 }
 
 .about__left-title {
     background: url(../images/about-header.svg) center center no-repeat;
-    height: 6rem;
+    height: 140px;
     background-size: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 400px;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    @include phones {
+        width: 200px;
+        background-size: 100%;
+    }
+    @include tabels {
+        margin: 0;
+    }
+}
+
+.user-description__title {
+    position: relative;
+    @include phones {
+        margin-top: 10px;
+    }
+}
+
+.block-title {
+    font-size: 3.2rem;
+    @include phones {
+        font-size: 35px;
+    }
+}
+
+.block-title:before {
+    display: block;
+    height: 5px;
+    width: 20px;
+    background-color: #c5cbcd;
+    content: "";
     position: absolute;
-    width: 100%;
-    top: -3rem;
-    left: 50%;
-    margin-left: -50%;
+    top: 68px;
+    left: 65px;
+    @include phones {
+        left: 0;
+    }
+}
+
+.block-title:after {
+    display: block;
+    height: 5px;
+    width: 20px;
+    background-color: #c5cbcd;
+    content: "";
+    position: absolute;
+    top: 68px;
+    right: 65px;
+    @include phones {
+        right: 0;
+    }
 }
 
 .about__left-cln__right {
     width: 60%;
     padding: 0 1rem;
+    margin-top: 120px;
+    @include tablets {
+        padding: 0;
+    }
+    @include phones {
+        width: 100%;
+    }
+    @include tabels {
+        margin: 0;
+    }
+}
+
+.user-description__text {
+    @include phones {
+        padding: 0 20px;
+    }
 }
 
 .user-description__image {
     background: url(../images/author.jpg) center top no-repeat;
     width: 100%;
     height: 20rem;
-    background-size: 100%;
+    background-size: cover;
+    @include phones {
+        width: 100%;
+    }
 }
 
 .user-description__text__item {
     font-size: 0.8rem;
     font-weight: 300;
+    @include tablets {
+        max-width: 460px;
+    }
 }
 
 .user-description__text__item:first-child {
@@ -103,6 +204,118 @@
 .block-subtitle {
     width: 15rem;
     text-align: center;
+    color: $gray-name;
+    font-family: 'bern-r';
+    text-transform: uppercase;
+    font-size: 1.75rem;
+    @include phones {
+        font-size: 21px;
+    }
+}
+
+.who-i:before {
+    display: block;
+    height: 5px;
+    width: 20px;
+    background-color: #c5cbcd;
+    content: "";
+    position: absolute;
+    top: 46px;
+    left: 70px;
+    @include tablets {
+        top: 46px;
+        left: 75px;
+    }
+    @include phones {
+        top: 27px;
+        right: 200px;
+    }
+}
+
+.who-i:after {
+    display: block;
+    height: 5px;
+    width: 20px;
+    background-color: #c5cbcd;
+    content: "";
+    position: absolute;
+    top: 46px;
+    right: 70px;
+    @include tablets {
+        top: 46px;
+        right: 75px;
+    }
+    @include phones {
+        top: 27px;
+        left: 200px;
+    }
+}
+
+//right
+.right-title__container {
+    position: relative;
+    width: 15rem;
+    margin: 0 auto;
+    @include phones {
+        margin-top: 20px;
+    }
+}
+
+.skill-title {
+    @include phones {
+        width: 200px;
+        text-align: center;
+        margin: 0 auto;
+        padding: 10px;
+    }
+}
+
+.skill-title:before {
+    display: block;
+    height: 5px;
+    width: 20px;
+    background-color: #c5cbcd;
+    content: "";
+    position: absolute;
+    top: 19px;
+    left: -35px;
+    @include tablets {
+        top: 35px;
+        left: -40px;
+    }
+    @include phones {
+        top: 35px;
+        left: 20px;
+    }
+}
+
+.skill-title:after {
+    display: block;
+    height: 5px;
+    width: 20px;
+    background-color: #c5cbcd;
+    content: "";
+    position: absolute;
+    top: 19px;
+    right: -35px;
+    @include tablets {
+        top: 35px;
+        right: -40px;
+    }
+    @include phones {
+        top: 35px;
+        right: 20px;
+    }
+}
+
+.about__right-title {
+    position: relative;
+    top: -45px;
+    left: 0;
+    width: 100%;
+    @include tablets {
+        top: 0px;
+    }
 }
 
 .about__right-content {
@@ -111,30 +324,50 @@
 
 .skills-list {
     width: 100%;
+    @include tablets {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        text-align: center;
+    }
 }
 
 .skills-row__title {
     font-weight: 1.4rem;
+    @include phones {
+        font-size: 20px;
+    }
 }
 
 .skills-row__list {
     display: flex;
+    flex-flow: wrap;
+    @include tablets {
+        justify-content: center;
+    }
 }
 
 .skills-row__item {
-    margin-left: 2rem;
+    margin-right: 1.75rem;
+    position: relative;
+    @include tablets {
+        margin: 0 .9rem;
+    }
 }
 
-.skills-row__item:first-child {
+.skills-row__item:last-child {
     margin: 0;
+    @include tablets {
+        margin: 0 .9rem;
+    }
 }
 
 //Дальше мощь скилов
 .circles {
     fill: none;
     stroke-width: 15;
-    width: 7rem;
-    height: 7rem;
+    width: 110px;
+    height: 110px;
 }
 
 .circle__first {
@@ -145,6 +378,23 @@
     stroke: #1bb696;
     stroke-dasharray: .0010 282.6;
     transition: all 1s;
+}
+
+.text-skill-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-skill {
+    font-size: .7rem;
+    color: $green;
+    text-align: center;
 }
 
 .item {

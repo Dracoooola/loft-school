@@ -1,0 +1,44 @@
+.blog-header {
+    height: 500px;
+    padding-bottom: 180px;
+}
+
+.hero-blog__user {
+    background-image: none;
+}
+
+.blog__pic {
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+    top: 285px;
+}
+
+.blog-title {
+    color: white;
+    font-size: 3rem;
+    @include phones {
+        font-size: 35px;
+    }
+}
+
+.blog-title__description {
+    font-size: .8rem;
+    font-weight: 300;
+    @include phones {
+        font-size: 14px;
+    }
+}
+
+.blog-arrow {
+    overflow: hidden;
+}
+
+.blog__pic-img {}
+
+.blog-user__description {
+    position: absolute;
+    top: 320px;
+}
+
+.blog-title {}

@@ -1,7 +1,15 @@
-.menu{
+.menu {
     padding: 0;
-    li{
+    li {
         display: inline-block;
         list-style: none;
     }
+}
+
+.menu__link {
+    transition: .3s;
+}
+
+.menu__link:hover {
+    color: $green;
 }

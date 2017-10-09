@@ -1,0 +1,42 @@
+extends ../template
+
+block variables
+  - var title = 'Добро пожаловать'
+
+block content
+  .index
+    .index-container 
+      .authorization-form-container
+        form.authorization-form
+          .authorization-form_top
+            .h1-container
+              h1.h1.authorization Авторизуйтесь
+            .input-block
+              .input-block__item
+                label.label.label-login(for="email")
+                  svg.authorization-icon
+                    use(xlink:href="assets/images/sprite/sprite.svg#login")
+                input.input(name="email" id="email" type="email" placeholder="Логин")
+              .input-block__item
+                label.label.pass(for="password") 
+                  svg.authorization-icon
+                      use(xlink:href="assets/images/sprite/sprite.svg#pass")
+                input.input(name="password" id="password" type="password" placeholder="Пароль")
+              label.robot-check-block
+                input(type="checkbox").first-robot-check.hero__radio-elem
+                .robot-check__fake
+                .robot-check__text Я человек
+              .two-text-check-block Вы точно не робот?
+              .third-text-check-block
+                label.radio-check-block.first-radio-check__left
+                  input(type="radio" name="radio" id="radio2").first-robot-check.hero__radio-elem
+                  .robot-check__fake
+                  .robot-check__text.radio-text Да
+                label.radio-check-block.first-radio-check__right
+                  input(type="radio" name="radio" id="radio2").first-robot-check.hero__radio-elem
+                  .robot-check__fake
+                  .robot-check__text.radio-text Не уверен
+          .authorization-form__bot
+            a(href='/about.html').button-form.button-form-left На главную
+            a(href='/index.html').button-form.button-form-right Войти
+    .author-text © Климов Владислав | создано с любовью в LoftSchool | 2017

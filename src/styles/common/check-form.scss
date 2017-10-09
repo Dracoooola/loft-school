@@ -39,6 +39,12 @@
 
 .first-radio-check__right {
     justify-content: flex-start;
+    @include tablets {
+        padding-right: 1rem;
+    }
+    @include tablets {
+        padding-right: 10px;
+    }
 }
 
 .first-robot-check {

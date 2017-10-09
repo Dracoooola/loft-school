@@ -3,6 +3,47 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
+    min-height: 970px;
+    @include phones {
+        display: flex;
+        align-items: flex-start;
+    }
+}
+
+.contacts-title {
+    font-size: 1.8rem;
+    @include phones {
+        font-size: 35px;
+    }
+}
+
+.contacts-title:before {
+    display: block;
+    height: 5px;
+    width: 20px;
+    background-color: #c5cbcd;
+    content: "";
+    position: absolute;
+    top: 45px;
+    left: 35px;
+    @include phones {
+        font-size: 35px;
+    }
+}
+
+.contacts-title:after {
+    display: block;
+    height: 5px;
+    width: 20px;
+    background-color: #c5cbcd;
+    content: "";
+    position: absolute;
+    top: 45px;
+    right: 35px;
+}
+
+.contacts__title {
+    position: relative;
 }
 
 .map__data {
@@ -10,6 +51,11 @@
     height: 15rem;
     background-color: rgba(238, 235, 223, .8);
     border-radius: 1%;
+    @include phones {
+        width: 100%;
+        border-radius: 0;
+        background-color: white;
+    }
 }
 
 .contacts {

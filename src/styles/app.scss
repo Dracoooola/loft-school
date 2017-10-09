@@ -18,17 +18,21 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
+@import 'common/mixin';
 @import 'common/global';
-@import 'common/f-p';
+@import 'common/about/user-image';
+@import 'common/about/about-hero';
+@import 'common/authorization/autorization';
+@import 'common/authorization/post-authorization';
 @import 'common/normalize';
 @import 'common/technologies';
 @import 'common/slider';
 @import 'common/menu';
-@import 'common/about/map';
 @import 'common/about/about-me';
-@import 'common/about/about-hero';
+@import 'common/about/map';
 @import 'common/footer';
 @import 'common/work/my-work-h';
 @import 'common/work/work-slider';
 @import 'common/work/work-rew';
 @import 'common/blog/blog';
+@import 'common/blog/blog-header';

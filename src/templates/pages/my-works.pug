@@ -9,17 +9,18 @@ block content
     .triangle-container
       .about__triangle
           svg(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none" class="triangle")
-              polygon(class="work-triangle" points="0,0   0,200   1000,200   1000,75.5")
+              polygon(class="work-triangle" points="0,0   0,100   1000,100   1000,60.5")
       .about__triangle
           svg(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none" class="triangle")
-              polygon(class="work-triangle" points="1000, 0   1000, 200   0, 200   0, 75.5")
+              polygon(class="work-triangle" points="1000, 0   1000, 100   0, 100   0, 60.5")
     .my-work__h-container
       h1.my-work__h Мои работы
   section.section.work-slider
     .work
       .work__left
         .work__left-center
-          h2.work-h Сайт школы онлайн Образования
+          .work__left-center-container
+            h2.work-site Сайт школы онлайн Образования
           .work-band
             .work__left-web Html, css, javascript
           button.work__button 
@@ -27,8 +28,15 @@ block content
               svg(class="link_button") 
                   use(xlink:href="assets/images/sprite/sprite.svg#link")
               .work__button-text Посмотреть сайт
-      .work__right
-        include ../common/slider.pug
+      .work__slider
+        ul#slides
+          li.slide.showing
+          li.slide
+          li.slide
+      .work__buttons
+        .buttons
+            button.controls#previous &lt;
+            button.controls#next &gt;
   section.section.reviews
     .container-reviews
       .review__text 
@@ -43,9 +51,8 @@ block content
               .reviews__name Ковальчук Дмитрий
               .reviews__rang основатель Loftschool
         li.reviews__item
-          .reviews-top-text
-            .reviews__img &#8220;
-            .reviews__txt Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+          .reviews__img &#8220;
+          .reviews__txt Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
           .reviews-comment__profile
             img.reviews__avatar(src="assets/images/vs.jpg", alt="")
             .comment__profile-named
@@ -55,11 +62,11 @@ block content
         .reviews__blur
         .reviews__center
           form.form.reviews__form
-            h2.work-text.color__text Связаться со мной
+            h2.work-text.form-work-h Связаться со мной
             input(type="text" id="name" placeholder="Имя").work__input.work__input-text
             input(type="text" id="email" placeholder="Email").work__input.work__input-text
             input(type="text" id="message" placeholder="Сообщение").work__input.work__text-area  
-          .authorization-form__bot
-              button.authorization-form__but.authorization-form__but-left Отправить
-              button.authorization-form__but.authorization-form__but-right Отчистить
+          .authorization-form__bot.reviews__form-bot
+              button.button-form.button-form-left Отправить
+              button.button-form.button-form-right Отчистить
   include ../common/footer.pug

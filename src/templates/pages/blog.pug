@@ -4,7 +4,35 @@ block variables
   - var title = 'Блог'
 
 block content
-  include ../common/header.pug
+  section.section.hero.blog-header
+      .hero-top-menu
+          .hero__socials
+              ul.socials
+                  li.socials__item 
+                      a(href="").socials__link
+                          svg.socials__icon.socials__icon-vk
+                              use(xlink:href="assets/images/sprite/sprite.svg#vk")
+                  li.socials__item 
+                      a(href="").socials__link
+                          svg.socials__icon
+                              use(xlink:href="assets/images/sprite/sprite.svg#git")
+                  li.socials__item 
+                      a(href="").socials__link
+                          svg.socials__icon.socials__icon-in
+                              use(xlink:href="assets/images/sprite/sprite.svg#in")
+          .hero__menu
+              .hamburger
+                  svg.hamburger-menu
+                      use(xlink:href="assets/images/sprite/sprite.svg#menu")
+      .hero__author
+          .user.hero__user.hero-blog__user
+              .user__pic
+                  //img.user__pic-img(src="assets/images/a.jpg", alt="i dont understand")
+              .blog__pic
+                  img.blog__pic-img(src="assets/images/blog_header.svg", alt="i dont understand")
+              .user__description.blog-user__description
+                  h1.h1.blog-title  Блог
+                  .blog-title__description Статьи, которые я написал
   section.triangle-blog
     .triangle-container
       .about__triangle

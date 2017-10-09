@@ -1,0 +1,150 @@
+.index {
+    height: 100vh;
+    min-height: 560px;
+    width: 100%;
+    background: url(../images/index-fone.jpg) center center no-repeat;
+    position: relative;
+    background-size: cover;
+    @include phones {
+        // min-height: 500px;
+    }
+}
+
+.index-container {
+    height: 100%;
+    //min-height: 700px;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.authorization-form-container {
+    height: 20.5rem;
+    position: relative;
+    border-radius: 1%;
+    overflow: hidden;
+}
+
+.authorization {
+    margin: 1.7rem 0 1.7rem;
+}
+
+.authorization:before {
+    display: block;
+    height: 5px;
+    width: 20px;
+    background-color: #c5cbcd;
+    content: "";
+    position: absolute;
+    top: 50px;
+    right: -35px;
+}
+
+.authorization:after {
+    display: block;
+    height: 5px;
+    width: 20px;
+    background-color: #c5cbcd;
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: -35px;
+}
+
+.authorization-form {
+    height: 18rem;
+    width: 19rem;
+    //padding: 0 1rem;
+    background-color: rgba(252, 252, 252, .85);
+    @include tablets {
+        width: 340px;
+    }
+    @include phones {
+        width: 300px;
+    }
+}
+
+.authorization-form_top {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.label {
+    display: flex;
+    border-radius: 0.2rem 0 0 0.2rem;
+    background-color: #f0efe9;
+    width: 2.25rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.authorization-icon {
+    height: 1rem;
+    width: 1rem;
+}
+
+.authorization-form__bot {
+    top: 18rem;
+    position: absolute;
+    width: 100%;
+    display: flex;
+}
+
+.button-form {
+    background-color: rgba(0, 191, 165, .85);
+    border: none;
+    width: 50%;
+    height: 2.5rem;
+    box-sizing: border-box;
+    font-size: 0.8rem;
+    color: white;
+    font-weight: 400;
+    line-height: 2.4rem;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    @include phones {
+        font-size: 14px;
+    }
+}
+
+.button-form:hover {
+    background-color: rgba(0, 150, 136, .85)
+}
+
+.button-form-left {
+    border-right: solid rgba(222, 227, 231, .5) 1px;
+}
+
+.button-form-right {
+    border-left: solid rgba(222, 227, 231, .5) 1px;
+}
+
+.author-text {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    color: white;
+    font-weight: 300;
+    font-size: .8rem;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    @include phones {
+        flex-flow: column;
+    }
+}
+
+.delimiter-autoriz::before {
+    content: "|";
+    @include phones {
+        content: none;
+    }
+}
+
+@import 'common/check-form';

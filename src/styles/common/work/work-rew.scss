@@ -1,6 +1,7 @@
 .reviews {
     background: url(../images/bg.jpg) center center no-repeat;
     position: relative;
+    background-size: cover;
 }
 
 .container-reviews {
@@ -9,42 +10,120 @@
     align-items: center;
 }
 
+.review__h {
+    font-size: 3rem;
+    font-family: 'bern-r';
+    color: $gray-name;
+    width: 60%;
+    text-align: center;
+    @include tablets {
+        font-size: 50px;
+    }
+    @include phones {
+        font-size: 35px;
+        margin-bottom: 0;
+    }
+}
+
+.review__h:before {
+    display: block;
+    height: 5px;
+    width: 20px;
+    background-color: #c5cbcd;
+    content: "";
+    position: absolute;
+    top: 65px;
+    left: 70px;
+    @include tablets {
+        left: 50px
+    }
+    @include phones {
+        top: 53px;
+        left: 35px;
+    }
+}
+
+.review__h:after {
+    display: block;
+    height: 5px;
+    width: 20px;
+    background-color: #c5cbcd;
+    content: "";
+    position: absolute;
+    top: 65px;
+    right: 70px;
+    @include tablets {
+        right: 50px;
+    }
+    @include phones {
+        top: 53px;
+        right: 35px;
+    }
+}
+
 .review__text {
     width: 25rem;
     height: 10rem;
     background: url(../images/about-header.svg) center center no-repeat;
+    background-size: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    @include tablets {
+        width: 14rem;
+    }
+    @include phones {
+        height: 6rem;
+    }
 }
 
 .reviews__list {
     display: flex;
-    width: 41rem;
+    flex-wrap: wrap;
+    max-width: 41rem;
+    width: 100%;
+    justify-content: center;
 }
 
 .reviews__item {
-    width: 50%;
+    width: 320px;
     display: flex;
     flex-flow: wrap;
     height: 100%;
     align-content: space-between;
     padding: 0 1rem;
+    @include tablets {
+        width: 290px;
+    }
+    @include phones {
+        margin-top: 10px;
+    }
 }
 
 .reviews__img {
     color: rgba(55, 62, 66, .5);
     font-size: 1.8rem;
     font-weight: 600;
+    @include phones {
+        margin: 0 auto;
+    }
 }
 
 .reviews__txt {
     font-size: 0.8rem;
     color: #455a64;
+    @include tablets {
+        font-size: 14px;
+    }
 }
 
 .reviews__avatar {
     border-radius: 50%;
+    @include phones {
+        height: 50px;
+        width: 50px;
+    }
 }
 
 .reviews-comment__profile {
@@ -58,6 +137,9 @@
     margin-left: 1rem;
     color: $green;
     font-size: 0.8rem;
+    @include tablets {
+        font-size: 14px;
+    }
 }
 
 .reviews__name {
@@ -67,6 +149,17 @@
 .reviews__rang {
     margin-top: 0.25rem;
     font-weight: 400;
+}
+
+.reviews__form {
+    height: 390px;
+}
+
+.reviews__form-bot {
+    top: 390px;
+    @include phones {
+        top: 370px;
+    }
 }
 
 .reviews__illusion {
@@ -95,6 +188,18 @@
     flex-flow: column;
     align-items: center;
     text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    @include tablets {
+        width: 18rem;
+        margin-left: -9rem;
+    }
+    @include phones {
+        width: 15rem;
+        margin-left: -7.5rem;
+        height: 21rem;
+    }
 }
 
 .work-text {
@@ -111,8 +216,60 @@
     height: 2.25rem;
     font-size: 0.8rem;
     padding: 0 0.5rem;
+    @include phones {
+        font-size: 14px;
+    }
 }
 
 .work__text-area {
     height: 7rem;
+}
+
+.form-work-h {
+    font-size: 1.75rem;
+    font-family: 'bern-r';
+    color: $gray-name;
+    text-align: center;
+    @include tablets {
+        font-size: 30px;
+    }
+    @include phones {
+        font-size: 20px;
+    }
+}
+
+.form-work-h:before {
+    display: block;
+    height: 5px;
+    width: 20px;
+    background-color: #c5cbcd;
+    content: "";
+    position: absolute;
+    top: 45px;
+    left: 15px;
+    @include tablets {
+        top: 39px;
+        left: 40px;
+    }
+    @include phones {
+        top: 26px;
+    }
+}
+
+.form-work-h:after {
+    display: block;
+    height: 5px;
+    width: 20px;
+    background-color: #c5cbcd;
+    content: "";
+    position: absolute;
+    top: 45px;
+    right: 15px;
+    @include tablets {
+        top: 39px;
+        right: 40px;
+    }
+    @include phones {
+        top: 26px;
+    }
 }

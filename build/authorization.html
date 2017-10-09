@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Добро пожаловать</title>
+    <meta content="" name="author">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible"><link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/styles/app.min.css">
+    <script src="/assets/scripts/bundle.js" defer></script>
+  </head>
+  <body>
+    <div class="index">
+      <div class="index-container"> 
+        <div class="authorization-form-container">
+          <form class="authorization-form">
+            <div class="authorization-form_top">
+              <div class="h1-container">
+                <h1 class="h1 authorization">Авторизуйтесь</h1>
+              </div>
+              <div class="input-block">
+                <div class="input-block__item">
+                  <label class="label label-login" for="email">
+                    <svg class="authorization-icon">
+                      <use xlink:href="assets/images/sprite/sprite.svg#login"></use>
+                    </svg>
+                  </label>
+                  <input class="input" name="email" id="email" type="email" placeholder="Логин">
+                </div>
+                <div class="input-block__item">
+                  <label class="label pass" for="password"> 
+                    <svg class="authorization-icon">
+                      <use xlink:href="assets/images/sprite/sprite.svg#pass"></use>
+                    </svg>
+                  </label>
+                  <input class="input" name="password" id="password" type="password" placeholder="Пароль">
+                </div>
+                <label class="robot-check-block">
+                  <input class="first-robot-check hero__radio-elem" type="checkbox">
+                  <div class="robot-check__fake"></div>
+                  <div class="robot-check__text">Я человек</div>
+                </label>
+                <div class="two-text-check-block">Вы точно не робот?</div>
+                <div class="third-text-check-block">
+                  <label class="radio-check-block first-radio-check__left">
+                    <input class="first-robot-check hero__radio-elem" type="radio" name="radio" id="radio2">
+                    <div class="robot-check__fake"></div>
+                    <div class="robot-check__text radio-text">Да</div>
+                  </label>
+                  <label class="radio-check-block first-radio-check__right">
+                    <input class="first-robot-check hero__radio-elem" type="radio" name="radio" id="radio2">
+                    <div class="robot-check__fake"></div>
+                    <div class="robot-check__text radio-text">Не уверен</div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="authorization-form__bot"><a class="button-form button-form-left" href="/about.html">На главную</a><a class="button-form button-form-right" href="/index.html">Войти</a></div>
+          </form>
+        </div>
+      </div>
+      <div class="author-text">© Климов Владислав | создано с любовью в LoftSchool | 2017</div>
+    </div>
+  </body>
+</html>
