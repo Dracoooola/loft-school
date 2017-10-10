@@ -1,0 +1,46 @@
+block variables
+
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title #{title}
+    meta(content="width=device-width, initial-scale=1" name="viewport")
+    meta(content="ie=edge" http-equiv="x-ua-compatible")
+
+    //- favicon block start
+    //- favicon block end
+
+    link(rel='stylesheet' href='/assets/styles/app.min.css')
+    script(src='/assets/scripts/bundle.js' defer)
+
+  body
+    .wrapper
+      .maincontent
+        block content
+
+            block variables
+            - var title = 'Parallax'
+
+            block content
+                #parallax.parallax
+                    .parallax__layer
+                        img(src="assets/images/parallaks/8.png").parallax__image.parallax__background
+                    .parallax__layer
+                        img(src="assets/images/parallaks/7.png").parallax__image
+                    .parallax__layer
+                        img(src="assets/images/parallaks/6.png").parallax__image
+                    .parallax__layer
+                        img(src="assets/images/parallaks/sky3.png").parallax__image.sky3
+                    .parallax__layer
+                        img(src="assets/images/parallaks/5.png").parallax__image
+                    .parallax__layer
+                        img(src="assets/images/parallaks/4.png").parallax__image
+                    .parallax__layer
+                        img(src="assets/images/parallaks/sky2.png").parallax__image.sky2
+                    .parallax__layer
+                        img(src="assets/images/parallaks/2.png").parallax__image
+                    .parallax__layer
+                        img(src="assets/images/parallaks/1.png").parallax__image
+                    //- .parallax__layer
+                    //-     img(src="assets/images/parallaks/sky1.png").parallax__image.sky1

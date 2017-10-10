@@ -2,10 +2,19 @@
     fill: white;
 }
 
+.blog-header {
+    background: url(../images/fone.jpg) center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .blog-section {
     background-color: white;
     display: flex;
     padding-bottom: 7rem;
+    @include phones {
+        padding: 1rem 0 12rem;
+    }
 }
 
 .blog-section__left-clm {
